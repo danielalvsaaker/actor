@@ -14,7 +14,7 @@ where
     fn handle(&mut self, msg: M) -> Self::Result;
 }
 
-/// A message that can be handled by an actor.
+/// A message which can be handled by an actor.
 pub trait Message: Send + 'static {
     /// Response from actor after handling message.
     type Result: Send + 'static;
